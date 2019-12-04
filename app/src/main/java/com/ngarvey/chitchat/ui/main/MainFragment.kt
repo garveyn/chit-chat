@@ -82,7 +82,10 @@ class MainFragment : Fragment() {
             messageDialog.setView(editText)
 
             messageDialog.setPositiveButton("Send", DialogInterface.OnClickListener { dialog, _ ->
-                viewModel.fetcher.sendMessage(editText.text.toString(), null, null)
+                val response = viewModel.fetcher.sendMessage(editText.text.toString(), null, null)
+                response.observe(this@MainFragment, Observer {
+
+                })
             })
         }
     }
