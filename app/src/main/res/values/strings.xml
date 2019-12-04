@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Chit Chat</string>
+    <string name="dislike">👎</string>
+    <string name="like">👍</string>
+</resources>
